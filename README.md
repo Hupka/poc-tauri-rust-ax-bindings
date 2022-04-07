@@ -1,4 +1,6 @@
-# Playground app to utilize macOS Accessibility APIs within Tauri Apps.
+# Rust bindings for macOS Accessibility API
+
+This project contains a playground app to utilize macOS Accessibility APIs within Tauri Apps.
 
 **How to run this project:**
 * Clone repository
