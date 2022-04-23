@@ -26,13 +26,11 @@ pub unsafe extern "C" fn callback_app_ax_notifications(
 
     match notification.to_string().as_str() {
         other => {
-            let role = element.attribute(&AXAttribute::role()).unwrap();
-            let pid = element.pid().unwrap();
             println!(
                 "PID: {}, event: {}, role: {}, element: {}",
-                pid.to_string().bold().blue(),
+                format!("{:?}", element.pid()).bold().blue(),
                 other.to_string().bold().red(),
-                format!("{:?}", role).green(),
+                format!("{:?}", element.attribute(&AXAttribute::role())).green(),
                 format!("{:?}", element).yellow(),
             )
         }
