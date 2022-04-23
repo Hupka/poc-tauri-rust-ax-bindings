@@ -45,6 +45,7 @@
         "timestampUrl": ""
       }
     },
+    "macOSPrivateApi": true,
     "updater": {
       "active": false
     },
@@ -54,10 +55,13 @@
     "windows": [
       {
         "title": "Tauri App",
-        "width": 800,
-        "height": 600,
+        "width": 400,
+        "height": 300,
         "resizable": true,
-        "fullscreen": false
+        "fullscreen": false,
+        "alwaysOnTop": true,
+        "transparent": true,
+        "decorations": false
       }
     ],
     "security": {

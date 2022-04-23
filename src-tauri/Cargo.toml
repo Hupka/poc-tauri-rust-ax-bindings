@@ -15,12 +15,15 @@ rust-version = "1.57"
 tauri-build = { version = "1.0.0-rc.5", features = [] }
 
 [dependencies]
-tauri = { version = "1.0.0-rc.5", features = ["api-all"] }
+tauri = { version = "1.0.0-rc.5", features = ["api-all", "macos-private-api"] }
 
 # macOS dependencies (crucial for Accessibility features to work)
 core-foundation = "0.9.3"
 core-graphics-types = "0.1.1"
 cocoa = "0.24.0"
+objc = "0.2.7"
+tao = "0.8.2"
+dispatch = "0.2.0"
 
 # Dependencies for accessibility apis
 accessibility = { git = "https://github.com/Hupka/accessibility" }

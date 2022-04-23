@@ -1,10 +1,19 @@
 <script lang="ts">
 	export let name: string;
+
+	function handleMouseOut(e) {
+		name = "ADRIAN";
+	}
+
+	function handleMouseOver(e) {
+		name = "Bedrian";
+	}
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<h1 on:mouseout={handleMouseOut} on:mouseover={handleMouseOver}>
+		Hello {name}!
+	</h1>
 </main>
 
 <style>

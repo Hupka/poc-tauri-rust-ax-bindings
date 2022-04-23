@@ -84,6 +84,9 @@ dependencies = [
  "colored",
  "core-foundation",
  "core-graphics-types",
+ "dispatch",
+ "objc",
+ "tao 0.8.2",
  "tauri",
  "tauri-build",
 ]
@@ -1578,6 +1581,18 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e2abad23fbc42b3700f2f279844dc832adb2b2eb069b2df918f455c4e18cc646"
 
 [[package]]
+name = "libayatana-appindicator"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0379d22a323947cb27b4dbe3b14fc1dcde07c9e9c3eca52ddf97ca0819c28cc4"
+dependencies = [
+ "glib",
+ "gtk",
+ "gtk-sys",
+ "log",
+]
+
+[[package]]
 name = "libc"
 version = "0.2.121"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3027,6 +3042,47 @@ dependencies = [
 ]
 
 [[package]]
+name = "tao"
+version = "0.8.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1fd4af2c14087bc642585cf84e3f122d6d120836e08b813991491cb6d3e1cf63"
+dependencies = [
+ "bitflags",
+ "cairo-rs",
+ "cc",
+ "cocoa",
+ "core-foundation",
+ "core-graphics",
+ "crossbeam-channel",
+ "dispatch",
+ "gdk",
+ "gdk-pixbuf",
+ "gdk-sys",
+ "gdkx11-sys",
+ "gio",
+ "glib",
+ "glib-sys 0.15.10",
+ "gtk",
+ "instant",
+ "lazy_static",
+ "libayatana-appindicator",
+ "libc",
+ "log",
+ "ndk",
+ "ndk-glue",
+ "ndk-sys",
+ "objc",
+ "parking_lot 0.11.2",
+ "raw-window-handle",
+ "scopeguard",
+ "tao-core-video-sys",
+ "unicode-segmentation",
+ "windows 0.30.0",
+ "windows_macros",
+ "x11-dl",
+]
+
+[[package]]
 name = "tao-core-video-sys"
 version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3969,7 +4025,7 @@ dependencies = [
  "once_cell",
  "serde",
  "serde_json",
- "tao",
+ "tao 0.7.0",
  "thiserror",
  "url",
  "webkit2gtk",
