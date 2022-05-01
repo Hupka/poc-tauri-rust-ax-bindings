@@ -15,7 +15,7 @@ rust-version = "1.57"
 tauri-build = { version = "1.0.0-rc.5", features = [] }
 
 [dependencies]
-tauri = { version = "1.0.0-rc.5", features = ["api-all"] }
+tauri = { version = "1.0.0-rc.5", features = ["api-all", "macos-private-api"] }
 
 # macOS dependencies (crucial for Accessibility features to work)
 core-foundation = "0.9.3"

@@ -10,7 +10,6 @@ fn main() {
     tauri::Builder::default()
         .setup(|app| {
             // Register observer for Tauri App.
-            observer::register(None, app.app_handle());
 
             // To observe any other application, go to macOS Activity Monitor -> Storage.
             // This shows the PID for each running application.
@@ -20,7 +19,7 @@ fn main() {
 
             // Observer for an Electron app - e.g. Slack/Discord/...
             // observer::register(Some(38774), app.app_handle());
-            // observer::register(Some(26096), app.app_handle());
+            observer::register(Some(66896), app.app_handle());
 
             Ok(())
         })
