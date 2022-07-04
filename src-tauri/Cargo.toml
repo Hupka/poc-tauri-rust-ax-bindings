@@ -12,10 +12,10 @@ rust-version = "1.57"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [build-dependencies]
-tauri-build = { version = "1.0.0-rc.5", features = [] }
+tauri-build = { version = "1.0.0", features = [] }
 
 [dependencies]
-tauri = { version = "1.0.0-rc.5", features = ["api-all", "macos-private-api"] }
+tauri = { version = "1.0.0", features = ["api-all"] }
 
 # macOS dependencies (crucial for Accessibility features to work)
 core-foundation = "0.9.3"

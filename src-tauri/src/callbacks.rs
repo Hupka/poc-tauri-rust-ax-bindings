@@ -1,6 +1,6 @@
 use std::{ffi::c_void, mem};
 
-use accessibility::{AXAttribute, AXObserver, AXUIElement};
+use accessibility::{AXObserver, AXUIElement, AXUIElementAttributes};
 use accessibility_sys::{AXObserverRef, AXUIElementRef};
 use core_foundation::{
     base::TCFType,
@@ -26,13 +26,12 @@ pub unsafe extern "C" fn callback_app_ax_notifications(
 
     match notification.to_string().as_str() {
         other => {
-            let role = element.attribute(&AXAttribute::role());
-            let pid = element.pid();
+            let pid = element.pid().unwrap();
             println!(
                 "PID: {}, event: {}, role: {}, element: {}",
                 format!("{:?}", pid).bold().blue(),
                 other.to_string().bold().red(),
-                format!("{:?}", role).green(),
+                format!("{:?}", element.role()).green(),
                 format!("{:?}", element).yellow(),
             )
         }
