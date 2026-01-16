@@ -99,12 +99,10 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
-"@tauri-apps/api@^1.0.0-rc.3":
-  version "1.0.0-rc.3"
-  resolved "https://registry.npmjs.org/@tauri-apps/api/-/api-1.0.0-rc.3.tgz"
-  integrity sha512-/ZbyBjuUoU6mYm8RzibIUvVuJ31ZwYA2+fTRl7FF4LVFhzCVJ1YI1BS5ohGb2GsLNmLpfeo7kDHaIhV2uaOchQ==
-  dependencies:
-    type-fest "2.12.1"
+"@tauri-apps/api@^1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@tauri-apps/api/-/api-1.6.0.tgz#745b7e4e26782c3b2ad9510d558fa5bb2cf29186"
+  integrity sha512-rqI++FWClU5I2UBp4HXFvl+sBWkdigBkxnpJDQUWttNyG7IZP4FwQGhTNL5EOw0vI8i6eSAJ5frLqO7n7jbJdg==
 
 "@tauri-apps/cli-darwin-arm64@1.0.0":
   version "1.0.0"
@@ -935,11 +933,6 @@ tslib@^2.0.0:
   version "2.3.1"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.3.1.tgz"
   integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
-
-type-fest@2.12.1:
-  version "2.12.1"
-  resolved "https://registry.npmjs.org/type-fest/-/type-fest-2.12.1.tgz"
-  integrity sha512-AiknQSEqKVGDDjtZqeKrUoTlcj7FKhupmnVUgz6KoOKtvMwRGE6hUNJ/nVear+h7fnUPO1q/htSkYKb1pyntkQ==
 
 typescript@*, typescript@^4.0.0:
   version "4.6.3"
